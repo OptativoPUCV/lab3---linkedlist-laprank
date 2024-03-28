@@ -50,16 +50,15 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
   if (list == NULL){
-    exit(EXIT_FAILURE);
+    return NULL;
   }
   if (list->current == NULL){
-    exit(EXIT_FAILURE);
+    return NULL;
   }
   if (list->current->next == NULL){
-    exit(EXIT_FAILURE);
+    return NULL;
   }
   list->current = list->current->next;
-  
   return list->current->data;
 }
 

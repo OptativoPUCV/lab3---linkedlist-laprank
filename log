@@ -10,3 +10,9 @@ Thu 28 Mar 2024 02:28:20 PM UTC:
  tests:  1|0
    [ INFO ] llamando a firstList
 9f82aed
+Thu 28 Mar 2024 02:33:59 PM UTC: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  1|0
+   [ INFO ] llamando a firstList
+cfdfe01
