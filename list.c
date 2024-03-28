@@ -38,11 +38,29 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-    return NULL;
+  if (list == NULL){
+    exit(EXIT_FAILURE);
+  }
+  if (list->head == NULL){
+    exit(EXIT_FAILURE);
+  }
+  list->current = list->head;
+  return list->head->data;
 }
 
 void * nextList(List * list) {
-    return NULL;
+  if (list == NULL){
+    exit(EXIT_FAILURE);
+  }
+  if (list->current == NULL){
+    exit(EXIT_FAILURE);
+  }
+  if (list->current->next == NULL){
+    exit(EXIT_FAILURE);
+  }
+  list->current = list->current->next;
+  
+  return list->current->data;
 }
 
 void * lastList(List * list) {
